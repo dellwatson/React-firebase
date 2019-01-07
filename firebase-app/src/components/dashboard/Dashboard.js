@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
-import PostSummary from '../post/PostSummary';
+import PostLists from '../post/PostLists';
 
 class Dashboard extends Component {
   render() {
     return (
-      <div>
-        <PostSummary />
+      <div className="dashboard container">
+        <div className="row">
+          <div className="col s12 m6">
+            <PostLists />
+          </div>
+        </div>
       </div>
     )
   }
