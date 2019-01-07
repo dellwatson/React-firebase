@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-function SignedInLinks() {
+
+function SignedInLinks(props) {
+  console.log(props)
   return (
     <div>
       <ul className="right">
-        <li>Navlink</li>      
+        <li><NavLink to='/create'>New Post</NavLink></li> 
+        <li><NavLink to='/login'>Login</NavLink></li>      
+        <li><NavLink to='/'>Dashboard</NavLink></li>      
       </ul>
     </div>
   )

@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import SignedInLinks from './SignedInLinks'
-import SignedOutLinks from './SignedOutLinks'
+// import SignedOutLinks from './SignedOutLinks'
 
-
-class Navbar extends Component {
-  render() {
+const Navbar = () => {
     return (
       <nav className="nav-wrapper grey darken-3">
         <div className="container">
@@ -13,7 +11,7 @@ class Navbar extends Component {
         </div>
       </nav>
     )
-  }
+  
 }
 
 export default Navbar;
