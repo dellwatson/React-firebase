@@ -10,7 +10,7 @@ class CreatePost extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.createPost(this.state)
+    this.props.createPostsz(this.state)
   }
 
   handleChange = (e) => {
@@ -20,7 +20,7 @@ class CreatePost extends Component {
   }
 
   render() {
-    
+    console.log(this.props)
     return (
       <div className="container">
         <form className="CreatePost white" onSubmit={this.handleSubmit}>
@@ -44,7 +44,7 @@ class CreatePost extends Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    createPost : (post) => { dispatch(createPost(post))}
+    createPostsz : (post) => { dispatch(createPost(post))}
   }
 }
 
