@@ -1,5 +1,5 @@
 export const createPost = (posts) => {
-    return (dispatch) => {
+    return (dispatch, getState, { getFirebase, getFirestore }) => {
         dispatch({
             type: 'CREATE_POST',
             posts
