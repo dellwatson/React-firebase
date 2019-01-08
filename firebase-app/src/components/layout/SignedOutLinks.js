@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom'
 
 function SignedOutLinks() {
   return (
     <div>
-      <p>signedout</p>
+      <ul className="right">
+        <li><NavLink to='/signup'>Sign Up</NavLink></li>
+        <li><NavLink to='/login'>Sign In</NavLink></li>
+      </ul>
     </div>
   )
 }
