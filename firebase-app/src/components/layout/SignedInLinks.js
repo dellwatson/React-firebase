@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 
 function SignedInLinks(props) {
-  console.log(props)
+  // console.log(props)
   return (
     <div>
       <ul className="right">
