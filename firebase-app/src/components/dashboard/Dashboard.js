@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PostLists from '../post/PostLists';
 import { connect } from 'react-redux';
+import { firestoreConnect } from 'react-redux-firebase';
+import { compose } from 'redux';
 
 class Dashboard extends Component {
   render() {
@@ -25,4 +27,9 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Dashboard);
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([
+    { collection: 'projects'}
+  ])
+)(Dashboard);
