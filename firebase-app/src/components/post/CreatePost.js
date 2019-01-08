@@ -44,7 +44,7 @@ class CreatePost extends Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    createPostsz : (post) => { dispatch(createPost(post))}
+    createPostsz : (post) => { dispatch(createPost(post)) }
   }
 }
 

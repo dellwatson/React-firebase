@@ -2,9 +2,9 @@ import React from 'react';
 import PostSummary from './PostSummary';
 
 function PostLists({posts}) {
-
-  const postList = posts.map((list) => {
-    return (<PostSummary list={list} key={list.id} />)
+  
+  const postList = posts && posts.map((post) => {
+    return (<PostSummary list={post} key={post.id} />)
   })
   return (
     <div className="post-list section">
